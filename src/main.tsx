@@ -4,11 +4,13 @@ import App from "./App.tsx";
 import "./index.css";
 import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
+import Header from "./components/Header.tsx";
 
 Amplify.configure(outputs);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+    <Header />
     <App />
   </React.StrictMode>
 );

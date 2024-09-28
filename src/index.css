@@ -1,10 +1,20 @@
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
+  background: #D0DCE6;
   display: flex;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: inherit;
+  font-size: 1.5em;
+  color: #334155;
   height: 100vh;
   width: 100vw;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background: #4D63E4;
   justify-content: center;
   align-items: center;
 }
@@ -12,7 +22,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  padding: 3em;
   align-items: stretch;
+  font-size: 1.5em;
+
 }
 
 button {
@@ -60,6 +73,33 @@ li:hover {
 }
 
 a {
-  font-weight: 800;
-  text-decoration: none;
+  color: #055CB4;
+  /* font-weight: 200;
+  text-decoration: none; */
+}
+
+.site-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  color: white;
+  letter-spacing: .1rem;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 10%;               
+  background-color:#000000;
+  height: 3px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  line-height: 1.3em;
+  font-weight: 200;
 }

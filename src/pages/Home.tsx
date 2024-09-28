@@ -1,58 +1,70 @@
-import { Authenticator } from '@aws-amplify/ui-react'
 import '@aws-amplify/ui-react/styles.css'
-import { useEffect, useState } from "react";
-import type { Schema } from "../../amplify/data/resource";
-import { generateClient } from "aws-amplify/data";
+import logo from "../assets/spartanics.webp";
+import logo_octopus from "../assets/octopus_energy.webp";
+import logo_western from "../assets/Western-Midstream-Advancing-Energy_Color-768x124-1.webp";
 
 
-const client = generateClient<Schema>();
+const WelcomeMessage = () => {
+  return (
+    <div>
+      <center>
+      <img src={logo} width="20%" />
+            <h3>We are Spartanics</h3></center>
+
+      <p>
+        Welcome! We formed Spartanics to support our children who are interested in Robotics,
+        and are currently students at Junior High Schools and High Schools at Katy ISD in Texas.
+        We aim to inspire our children and other students to pursue interests in Robotics
+        and STEM-related fields.
+        </p><p>
+        We prepare students to compete in
+        the <a href="https://www.firstinspires.org/robotics/ftc">First Tech Challenge</a> and <a href="https://info.firstinspires.org/first-in-show?utm_source=adwords&utm_term=%2Blego%20%2Bleague&utm_medium=ppc&utm_campaign=fir-bra&hsa_src=g&hsa_acc=3688876192&hsa_mt=b&hsa_net=adwords&hsa_cam=654200147&hsa_grp=49518348374&hsa_ad=655982770780&hsa_kw=%2Blego%20%2Bleague&hsa_tgt=kwd-342252918864&hsa_ver=3&gad=1&gclid=Cj0KCQjwib2mBhDWARIsAPZUn_kYBST1iYqQQZhzl6ugLIrWJvpnFY2osYgSfwEO-fdvI2yjvmcAPqwaAkPSEALw_wcB">
+          First Lego League</a>,
+        develop a platform whereby teams can spar their robots and help each other towards
+        a better design, and raise coaches and mentors among the parents who will encourage
+        students further in their journey to completing their design and to ready their robots
+        to solve the various competition challenges.
+      </p>
+      <p>
+        If you have any questions please contact us at <a href="mailto:info@spartanics.org">info@spartanics.org</a>.
+      </p>
+      <a href="https://drive.google.com/file/d/1dLpXV82rVY8kac95Uvbbwd1ADTKpqWD0/view?usp=sharing">Spartanics Bylaws</a>
+
+    </div >
+  )
+}
+
+const SponsorMessage = () => {
+  return (
+    <div>
+      <center><h3>Our Sponsors</h3></center>
+      <p>We thank our Sponsors for their dedication to education and STEM initiatives.</p>
+    
+    <table width="100%">
+      <tr>
+        <td>
+          <a href="https://octopusenergy.com/"><img height="200px" src={logo_octopus} /></a>
+        </td>
+        <td>
+          <a href="https://www.westernmidstream.com/"><img height="100px" src={logo_western} /></a>
+        </td>
+        </tr>
+    </table>
+    </div>
+  )
+}
 
 const Home = () => {
-    const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
+  return (
+    <main>
+      <WelcomeMessage />
+      <br />
+      <hr />
+      <br />
+      <SponsorMessage />
+    </main>
+  );
 
-    useEffect(() => {
-      client.models.Todo.observeQuery().subscribe({
-        next: (data) => setTodos([...data.items]),
-      });
-    }, []);
-  
-    function createTodo() {
-      client.models.Todo.create({ content: window.prompt("Todo content") });
-    }
-  
-    function deleteTodo(id: string) {
-      client.models.Todo.delete({ id })
-    }  
-  
-    return (
-      
-      <Authenticator>
-        {({ signOut, user }) => (
-  
-      <main>
-        <h1>{user?.signInDetails?.loginId}'s todos</h1>
-        <button onClick={createTodo}>+ new</button>
-        <ul>
-          {todos.map((todo) => (
-            <li 
-            onClick={() => deleteTodo(todo.id)}
-            key={todo.id}>{todo.content}</li>
-          ))}
-        </ul>
-        <div>
-          🥳 App successfully hosted. Try creating a new todo.
-          <br />
-          <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
-            Review next step of this tutorial.
-          </a>
-        </div>
-        <button onClick={signOut}>Sign out</button>      
-      </main>
-  
-        )}
-        </Authenticator>
-  
-    );
-  };
- 
+};
+
 export default Home;
