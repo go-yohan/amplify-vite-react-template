@@ -14,7 +14,7 @@ const lst_teams_fll = [
     { name: "Spartan Tech", logo: logo_spartantech, uri: "/spartan-tech" },
 ];
 
-function Show({ team_name, logo, uri }) {
+const Show = ({ team_name="", logo="", uri="" }) => {
     return (
         <div className='container' style={{
             margin: '1em', alignContent: 'top', verticalAlign: 'top', backgroundColor: 'white', color: 'blue',
