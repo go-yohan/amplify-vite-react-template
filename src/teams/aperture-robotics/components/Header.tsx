@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logo from '../assets/spartanics.webp';
+import classes from "./Header.module.css";
 
 const Nav = styled.nav`
   // background-color: #f2f2f2;
@@ -46,8 +46,8 @@ const LeftSection = styled.nav`
 
 const Header = () => {
   return (
-    <div className="header" style={{ height: '10em', width: '100%' }}>
-      <LeftSection className='site-title'><img src={logo} height='110px' />Spartanics</LeftSection>
+    <div className={classes.header} style={{ height: '10em', width: '100%' }}>
+      <LeftSection className='site-title'>Aperture Robotics</LeftSection>
       <Navbar></Navbar>
     </div>
   )
