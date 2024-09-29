@@ -38,10 +38,9 @@ main {
   margin-left: 5em;
   display: flex;
   flex-direction: column;
-  padding: 3em;
+  padding: 1em;
   align-items: stretch;
   font-size: 1.5em;
-
 }
 
 button {
