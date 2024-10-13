@@ -15,7 +15,8 @@ function App() {
         <Router>
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<Home />} />
+        <Route path="/teams" element={<About />} />
         <Route path="/test" element={<HomeApertureRobotics />} />
         <Route path="/aperture-robotics" element={<TeamPage name="aperture-robotics" />} />
         <Route path="/cyber-spartan-x" element={<TeamPage name="cyber-spartan-x" />} />
