@@ -1,6 +1,7 @@
 import '@aws-amplify/ui-react/styles.css'
 import logo from "../assets/spartanics.webp";
 import logo_octopus from "../assets/octopus_energy.webp";
+import logo_emerson from "../assets/Logo_Emerson.svg";
 import logo_western from "../assets/Western-Midstream-Advancing-Energy_Color-768x124-1.webp";
 import Header from "../components/Header.tsx";
 
@@ -37,16 +38,28 @@ const WelcomeMessage = () => {
 const SponsorMessage = () => {
   return (
     <div>
-      <center><h3>Our Sponsors</h3></center>
+      <center><h3>Our Sponsors</h3>
+      </center>
       <p>We thank our Sponsors for their dedication to education and STEM initiatives.</p>
 
-      <table width="100%">
+      <table width="75%">
         <tr>
           <td>
-            <a href="https://octopusenergy.com/"><img height="200px" src={logo_octopus} /></a>
+            <a href="https://emerson.com/en-us"><img height="100px" src={logo_emerson} /></a>
           </td>
           <td>
             <a href="https://www.westernmidstream.com/"><img height="100px" src={logo_western} /></a>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+      <p>Our past Sponsors.</p>
+
+      <table width="40%">
+        <tr>
+          <td>
+            <a href="https://octopusenergy.com/"><img height="200px" src={logo_octopus} /></a>
           </td>
         </tr>
       </table>
