@@ -42,19 +42,19 @@ const SponsorMessage = () => {
       </center>
       <p>We thank our Sponsors for their dedication to education and STEM initiatives.</p>
 
-      <table width="100%" height="220px">
+      <table width="100%">
         <tr>
-          <td width="300">
+          <td className="sponsor-text">
             <a href="https://emerson.com/en-us"><img height="100px" src={logo_emerson} /></a>
           </td>
-          <td width="600">
+          <td className="sponsor-text">
             <a href="https://www.westernmidstream.com/"><img height="100px" src={logo_western} /></a>
           </td>
         </tr>
     </table>
-    <table width="100%" height="220px">
+    <table width="100%">
         <tr>
-          <td width="400" className="sponsor-text">
+          <td className="sponsor-text">
           Elitefix Renovations<br />
           (281) 612-3330
           </td>

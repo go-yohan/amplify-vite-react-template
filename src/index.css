@@ -120,6 +120,7 @@ h3 {
 }
 
 .sponsor-text {
+    padding: 40px 60px 40px 0;
     font-family: 'fantasy';
-    font-size: 1.em;
+    font-size: 1.2em;
 }
