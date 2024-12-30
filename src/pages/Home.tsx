@@ -54,7 +54,7 @@ const SponsorMessage = () => {
     </table>
     <table width="100%" height="220px">
         <tr>
-          <td width="400" class="sponsor-text">
+          <td width="400" className="sponsor-text">
           Elitefix Renovations<br />
           (281) 612-3330
           </td>
