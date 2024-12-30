@@ -29,7 +29,7 @@ const WelcomeMessage = () => {
       <p>
         If you have any questions please contact us at <a href="mailto:info@spartanics.org">info@spartanics.org</a>.
       </p>
-      <a href="https://drive.google.com/file/d/1dLpXV82rVY8kac95Uvbbwd1ADTKpqWD0/view?usp=sharing">Spartanics Bylaws</a>
+      <a href="https://drive.google.com/file/d/17888X62KTxcdfDhIEo0BYQYviKQ3TOs9/view?usp=sharing">Spartanics Bylaws</a>
 
     </div >
   )
@@ -42,13 +42,21 @@ const SponsorMessage = () => {
       </center>
       <p>We thank our Sponsors for their dedication to education and STEM initiatives.</p>
 
-      <table width="75%">
+      <table width="100%" height="220px">
         <tr>
-          <td>
+          <td width="300">
             <a href="https://emerson.com/en-us"><img height="100px" src={logo_emerson} /></a>
           </td>
-          <td>
+          <td width="600">
             <a href="https://www.westernmidstream.com/"><img height="100px" src={logo_western} /></a>
+          </td>
+        </tr>
+    </table>
+    <table width="100%" height="220px">
+        <tr>
+          <td width="400" class="sponsor-text">
+          Elitefix Renovations<br />
+          (281) 612-3330
           </td>
         </tr>
       </table>
