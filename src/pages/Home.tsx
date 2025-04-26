@@ -62,7 +62,7 @@ const SponsorMessage = () => {
       </table>
 
       <br />
-      <p>Our past Sponsors.</p>
+      <p>Our past Sponsors:.</p>
 
       <table width="40%">
         <tr>
