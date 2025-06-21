@@ -2,6 +2,7 @@ import '@aws-amplify/ui-react/styles.css'
 import logo from "../assets/spartanics.webp";
 import logo_octopus from "../assets/octopus_energy.webp";
 import logo_emerson from "../assets/Logo_Emerson.svg";
+import logo_polymaker_horizontal from "../assets/logo_polymaker_horizontal.svg";
 import logo_western from "../assets/Western-Midstream-Advancing-Energy_Color-768x124-1.webp";
 import Header from "../components/Header.tsx";
 
@@ -49,6 +50,9 @@ const SponsorMessage = () => {
           </td>
           <td className="sponsor-text">
             <a href="https://www.westernmidstream.com/"><img height="100px" src={logo_western} /></a>
+          </td>
+          <td className="sponsor-text">
+            <a href="https://www.polymaker.com/"><img height="100px" src={logo_polymaker_horizontal} /></a>
           </td>
         </tr>
     </table>
