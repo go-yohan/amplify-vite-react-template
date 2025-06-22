@@ -8,10 +8,11 @@ import Header from "../components/Header.tsx";
 
 const WelcomeMessage = () => {
   return (
-    <div>
+    <div className="mainLogo">
       <center>
         <img src={logo} width="20%" />
-        <h3>We are Spartanics</h3></center>
+        <h3>We are Spartanics</h3>
+      </center>
 
       <p>
         Welcome! We formed Spartanics to support our children who are interested in Robotics,
@@ -41,7 +42,7 @@ const SponsorMessage = () => {
     <div>
       <center><h3>Our Sponsors</h3>
       </center>
-      <p>We thank our Sponsors for their dedication to education and STEM initiatives.</p>
+      <center><p>We thank our Sponsors for their dedication to education and STEM initiatives.</p></center>
 
       <table width="100%">
         <tr>
