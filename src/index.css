@@ -1,14 +1,19 @@
 body {
-  margin: 0;
-  background: #D0DCE6;
-  display: flex;
-  font-weight: inherit;
-  font-size: 1.5em;
-  color: #334155;
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: stretch;
+    margin: 0;
+    background: #D0DCE6;
+    display: flex;
+    font-weight: inherit;
+    font-size: 1.5em;
+    color: #334155;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: stretch;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    width: 200vw; 
+    height: 200vh;
+    overflow: auto;
 }
 
 .header {
@@ -123,4 +128,9 @@ h3 {
     padding: 40px 60px 40px 0;
     font-family: 'fantasy';
     font-size: 1.2em;
+}
+.spartanics-logo {
+    display: block; /* Important: makes the image a block-level element */
+    width: 20%;    /* Retains your desired width */
+    margin: 0 auto; /* Centers the block-level element horizontally */
 }
