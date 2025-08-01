@@ -31,7 +31,7 @@ const WelcomeMessage = () => {
       <p>
         If you have any questions please contact us at <a href="mailto:info@spartanics.org">info@spartanics.org</a>.
       </p>
-      <a href="https://drive.google.com/file/d/17888X62KTxcdfDhIEo0BYQYviKQ3TOs9/view?usp=sharing">Spartanics Bylaws</a>
+      <a href="https://drive.google.com/file/d/1T4abzoTBvbVDghAB3-lCEGDZv0f7vngr/view?usp=sharing">Spartanics Bylaws</a>
 
     </div >
   )
