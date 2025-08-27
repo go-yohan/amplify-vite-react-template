@@ -17,8 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Home />} />
         <Route path="/teams" element={<About />} />
-        <Route path="/test" element={<HomeApertureRobotics />} />
-        <Route path="/aperture-robotics" element={<TeamPage name="aperture-robotics" />} />
+        <Route path="/test" element={<TeamPage name="aperture-robotics" />} />
+        <Route path="/aperture-robotics" element={<HomeApertureRobotics />} />
         <Route path="/cyber-spartan-x" element={<TeamPage name="cyber-spartan-x" />} />
         <Route path="/sparking" element={<TeamPage name="sparking" />} />
         <Route path="/spartan-tech" element={<TeamPage name="spartan-tech" />} />
