@@ -1,27 +1,23 @@
 body {
-    margin: 0;
-    background: #D0DCE6;
-    display: flex;
-    font-weight: inherit;
-    font-size: 1.5em;
-    color: #334155;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: stretch;
-    transform: scale(0.5);
-    transform-origin: 0 0;
-    width: 200vw; 
-    height: 200vh;
-    overflow: auto;
+  margin: 0;
+  background: #D0DCE6;
+  font-weight: inherit;
+  font-size: 1.5em;
+  color: #334155;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .header {
   display: flex;
-  flex-direction: row;
+  margin-left: calc(-50vw + 50%);;
   background: #4D63E4;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  
 }
 
 .flex {
@@ -29,7 +25,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .header a:hover {
@@ -39,21 +35,18 @@ body {
 }
 
 main {
-  margin-right: 5em;
-  margin-left: 5em;
   display: flex;
   flex-direction: column;
   padding: 1em;
   align-items: stretch;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.4em;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
@@ -100,8 +93,7 @@ a {
 
 .site-title {
   font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-size: 3.5em;
+  font-size: 3em;
   color: white;
   letter-spacing: .1rem;
 }
@@ -124,13 +116,57 @@ h3 {
   font-weight: 200;
 }
 
-.sponsor-text {
-    padding: 40px 60px 40px 0;
-    font-family: 'fantasy';
-    font-size: 1.2em;
+.sponsor-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
 }
+
+.sponsor-text {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
 .spartanics-logo {
-    display: block; /* Important: makes the image a block-level element */
-    width: 20%;    /* Retains your desired width */
-    margin: 0 auto; /* Centers the block-level element horizontally */
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.mainLogo p {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.mainLogo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .site-title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
 }

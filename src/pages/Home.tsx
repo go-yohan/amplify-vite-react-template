@@ -31,7 +31,7 @@ const WelcomeMessage = () => {
       <p>
         If you have any questions please contact us at <a href="mailto:info@spartanics.org">info@spartanics.org</a>.
       </p>
-      <a href="https://drive.google.com/file/d/1T4abzoTBvbVDghAB3-lCEGDZv0f7vngr/view?usp=sharing">Spartanics Bylaws</a>
+      <center><a href="https://drive.google.com/file/d/1T4abzoTBvbVDghAB3-lCEGDZv0f7vngr/view?usp=sharing">Spartanics Bylaws</a></center>
 
     </div >
   )
@@ -44,20 +44,24 @@ const SponsorMessage = () => {
       </center>
       <center><p>We thank our Sponsors for their dedication to education and STEM initiatives.</p></center>
 
-      <table width="100%">
-        <tr>
-          <td className="sponsor-text">
-            <a href="https://emerson.com/en-us"><img height="100px" src={logo_emerson} /></a>
-          </td>
-          <td className="sponsor-text">
-            <a href="https://www.westernmidstream.com/"><img height="100px" src={logo_western} /></a>
-          </td>
-          <td className="sponsor-text">
-            <a href="https://www.polymaker.com/"><img height="100px" src={logo_polymaker_horizontal} /></a>
-          </td>
-        </tr>
-    </table>
-    <table width="100%">
+      <div className="sponsor-row">
+        <center>
+        <div className="sponsor-text">
+          <a href="https://emerson.com/en-us"><img height="50vw" src={logo_emerson} /></a>
+        </div>
+        </center>
+        <center>
+        <div className="sponsor-text">
+          <a href="https://www.westernmidstream.com/"><img height="40vw" src={logo_western} /></a>
+        </div>
+        </center>
+        <center>
+        <div className="sponsor-text">
+          <a href="https://www.polymaker.com/"><img height="50vw" src={logo_polymaker_horizontal} /></a>
+        </div>
+        </center>
+      </div>
+      <table>
         <tr>
           <td className="sponsor-text">
           Elitefix Renovations<br />
@@ -67,12 +71,14 @@ const SponsorMessage = () => {
       </table>
 
       <br />
-      <p>Our past Sponsors:.</p>
+      <center><p>Our past Sponsors:</p></center>
 
       <table width="40%">
         <tr>
           <td>
-            <a href="https://octopusenergy.com/"><img height="200px" src={logo_octopus} /></a>
+            <center>
+            <a href="https://octopusenergy.com/"><img height="80vw" src={logo_octopus} /></a>
+            </center>
           </td>
         </tr>
       </table>

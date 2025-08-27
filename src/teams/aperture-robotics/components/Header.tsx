@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import classes from "./Header.module.css";
 
 const Nav = styled.nav`
   // background-color: #f2f2f2;
   padding: 20px;
-  display: flex;
   // justify-content: space-around;
   align-items: center;
 `;
@@ -26,7 +24,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavLink href="/">Home</NavLink>
-      <NavLink href="/about">Teams</NavLink>
+      <NavLink href="/teams">Teams</NavLink>
       <NavLink href="/contact">Contact</NavLink>
 
     </Nav>
@@ -36,17 +34,16 @@ const Navbar = () => {
 
 const LeftSection = styled.nav`
   display: flex;
-  flex-basis: auto;
-  justify-content: flex-start; // Align items to the left
   // align-items: center;
   // background-color: #f2f2f2;
+  font-size: 2em;
   padding: 30px;
 `;
 
 
 const Header = () => {
   return (
-    <div className={classes.header} style={{ height: '10em', width: '100%' }}>
+    <div className="header">
       <LeftSection className='site-title'>Aperture Robotics</LeftSection>
       <Navbar></Navbar>
     </div>
